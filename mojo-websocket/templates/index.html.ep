@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Console</title>
-
 <script>
     window.onload = function() {
         var ws = new WebSocket('<%= url_for('console')->to_abs %>');
@@ -16,18 +15,15 @@
         }
     }
 </script>
-
 <style>
     body * {
         font-family: monospace;
         white-space: pre;
     }
-
     #console {
         background: #000;
         color: #ccc;
     }
 </style>
-
 <div id="console"></div>
 <form id="send"><input id="command"></form>
